@@ -1,0 +1,122 @@
+ html body{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+width: 100%;
+height: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+#service{
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #010100;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#our{
+    /* background-image: url('./images/servicesimage.gif'); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    padding: 100px;
+    font-size: 80px;
+    color: rgb(240, 236, 236);
+    margin: 0;
+}
+
+.div{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 11, 11);
+    color: rgb(247, 245, 245);
+    margin: 100px 0;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px white;
+    padding: 50px;
+}
+.div:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    width: 620px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 9, 9);
+    color: rgb(250, 249, 249);
+    margin: 100px 0;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px white;
+    padding: 50px;
+    transform: scale(1.1);
+}
+
+/* @media(max-width: 420px) {
+    #service{
+        width: 100%;
+        background-color: #010100;
+    
+    }
+
+    #our{
+        width: 100%;
+        height: 90%;
+        font-size: 40px;
+        position: relative;
+        left: 10px;
+        bottom: 65px;
+       text-align: center;
+    }
+    
+    .div{
+        width: 50%;
+        margin:  20px auto;
+        padding: 50px;
+        position: relative;
+        left: 15px;
+        bottom: 130px;
+    }
+
+    .div:hover{
+        width: 50%;
+        margin: auto;
+        transform: scale(1);
+    }
+} */
+
+
+@media (max-width: 768px) {
+    #service {
+        padding: 20px; /* Add padding for smaller screens */
+    }
+
+    #our {
+        height: auto; /* Allow height to adjust */
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+        font-size: 50px; /* Reduce font size for better readability */
+    }
+
+    .div {
+        width: 90%; /* Make the card responsive */
+        margin: 50px auto; /* Center the card */
+        padding: 30px; /* Adjust padding */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Slightly reduce shadow */
+    }
+
+    .div:hover {
+        transform: scale(1.05); /* Slightly reduce scale effect */
+    }
+}
